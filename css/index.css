@@ -59,24 +59,44 @@ body{
 /* Header */
 .header__body{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #26439f;
 }
 .header__logo img{
     display: flex;
 }
-.header__title{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.header__title h1{
+    margin-right: 20px;
 }
 .header__title h1{
-    font-size: 32px;
+    font-size: 30px;
     color: #fff;
     text-transform: uppercase;
     font-family: AdverGothicRegular ;
 }
+.header__contact ul {
+  display: flex;
+
+}
+.header__contact ul li{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding-left: 30px;
+}
+.header__contact ul li:first-child{
+  padding-left: 0;
+}
+.header__contact ul li a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.header__contact ul li i{
+   color: #fff;
+   padding-right: 5px;
+}
+
 /* Main */
 .main__block__one{
     display: flex;
