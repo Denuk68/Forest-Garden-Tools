@@ -61,9 +61,17 @@ body{
     display: flex;
     align-items: center;
     background-color: #26439f;
+    height: 115px;
 }
 .header__logo img{
     display: flex;
+}
+.header__wrapper{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header__title h1{
     margin-right: 20px;
@@ -76,13 +84,15 @@ body{
 }
 .header__contact ul {
   display: flex;
-
 }
 .header__contact ul li{
   display: flex;
   align-items: center;
   height: 30px;
   padding-left: 30px;
+}
+.header__contact ul li:last-child{
+ padding-right: 20px;
 }
 .header__contact ul li:first-child{
   padding-left: 0;
@@ -95,6 +105,9 @@ body{
 .header__contact ul li i{
    color: #fff;
    padding-right: 5px;
+}
+.header__contact__mobile{
+  display: none;
 }
 
 /* Main */
@@ -222,6 +235,16 @@ body{
   .container {
     max-width: 970px;
   }
+  /* Header */
+  .header__wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__title h1{
+    margin-right: 0;
+    margin-bottom: 10px;
+}
   /* Main */
     .main__block__two .map{  
         width: 640px;   
@@ -238,6 +261,9 @@ body{
    .header__title h1{
     font-size: 25px;
    }
+   .header__contact ul li {
+      padding-left: 20px;
+}
    /* Main */
    .main__block__one  .info  h2{
    font-size: 21px;
@@ -273,6 +299,36 @@ body{
   .container {
     max-width: none;
   } 
+  /* Header */
+  .header__contact{
+    display: none;
+  }
+  .header__title h1{
+    margin-bottom: 0;
+  }
+  .header__contact__mobile{
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: #26439f;
+  }
+  .header__contact__mobile ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px #fff solid;
+  }
+  .header__contact__mobile ul li a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+  .header__contact__mobile ul li i{
+   color: #fff;
+   padding-right: 2px;
+}
   /* Main */
   .main__block__one{
     flex-direction: column;
@@ -346,6 +402,19 @@ body{
  /* Header */
   .header__title h1{
        font-size: 25px;
+  }
+  .header__contact__mobile{
+    height: 120px;
+    }
+  .header__contact__mobile ul{
+    flex-direction: column;
+    justify-content: center;
+    }
+  .header__contact__mobile ul li:not(:last-child){
+    padding-bottom: 10px;   
+  }
+  .header__contact__mobile ul li a{
+    font-size: 21px;
   }
   /* Main */
  .main__block__two .map iframe{
